@@ -1,16 +1,16 @@
 import React from "react";
-import { Button } from "react-bootstrap";
-import simpsons from "./images/simpsons.jpg";
-import { Container } from "react-bootstrap";
-import { Row } from "react-bootstrap";
-import { Col } from "react-bootstrap";
+//import { Button } from "react-bootstrap";
+// import simpsons from "./images/simpsons.jpg";
+// import { Container } from "react-bootstrap";
+// import { Row } from "react-bootstrap";
+// import { Col } from "react-bootstrap";
 import "./App.css";
-import { ChangeType } from "./components/ChangeType";
-import { RevealAnswer } from "./components/RevealAnswer";
-import { StartAttempt } from "./components/StartAttempt";
-import { TwoDice } from "./components/TwoDice";
-import { CycleHoliday } from "./components/CycleHoliday";
-import { Counter } from "./components/Counter";
+// import { ChangeType } from "./components/ChangeType";
+// import { RevealAnswer } from "./components/RevealAnswer";
+// import { StartAttempt } from "./components/StartAttempt";
+// import { TwoDice } from "./components/TwoDice";
+// import { CycleHoliday } from "./components/CycleHoliday";
+// import { Counter } from "./components/Counter";
 import { DoubleHalf } from "./bad-components/DoubleHalf";
 import { ColoredBox } from "./bad-components/ColoredBox";
 import { ShoveBox } from "./bad-components/ShoveBox";
@@ -19,7 +19,7 @@ import { ChooseTeam } from "./bad-components/ChooseTeam";
 function App(): React.JSX.Element {
     return (
         <div className="App">
-            <header className="App-header">
+            {/* <header className="App-header">
                 <h1>This is a header.</h1>
                 UD CISC275 with React Hooks and TypeScript
                 <br />
@@ -33,9 +33,9 @@ function App(): React.JSX.Element {
                     <li>Another thing</li>
                     <li>A third item</li>
                 </ul>
-            </header>
+            </header> */}
             <hr></hr>
-            {/* <DoubleHalf></DoubleHalf> */}
+            <DoubleHalf></DoubleHalf>
             <hr></hr>
             <ChooseTeam></ChooseTeam>
             <hr></hr>
@@ -43,7 +43,7 @@ function App(): React.JSX.Element {
             <hr></hr>
             <ShoveBox></ShoveBox>
             <hr></hr>
-            <Counter></Counter>
+            {/* <Counter></Counter>
             <hr />
             <RevealAnswer></RevealAnswer>
             <hr />
@@ -53,7 +53,7 @@ function App(): React.JSX.Element {
             <hr />
             <ChangeType></ChangeType>
             <hr />
-            <CycleHoliday></CycleHoliday>
+            <CycleHoliday></CycleHoliday> */}
         </div>
     );
 }
