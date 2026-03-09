@@ -5,6 +5,16 @@ import { Container } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import "./App.css";
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
+import { Counter } from "./components/Counter";
+import { DoubleHalf } from "./bad-components/DoubleHalf";
+import { ColoredBox } from "./bad-components/ColoredBox";
+import { ShoveBox } from "./bad-components/ShoveBox";
+import { ChooseTeam } from "./bad-components/ChooseTeam";
 
 function App(): React.JSX.Element {
     return (
@@ -24,37 +34,26 @@ function App(): React.JSX.Element {
                     <li>A third item</li>
                 </ul>
             </header>
-            <p>
-                <Button
-                    onClick={() => {
-                        console.log("Hello World!");
-                    }}
-                >
-                    Log Hello World
-                </Button>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload.
-            </p>
-            <div>
-                <Container>
-                    <Row>
-                        <Col style={{ backgroundColor: "red" }}>
-                            First column.
-                        </Col>
-                        <Col
-                            style={{
-                                backgroundColor: "red",
-                                width: "50%",
-                                height: "100px",
-                            }}
-                        >
-                            Second column. You can put whatever you want in
-                            here, and it will be on the right side. Maybe try
-                            adding an image?
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+            <hr></hr>
+            {/* <DoubleHalf></DoubleHalf> */}
+            <hr></hr>
+            <ChooseTeam></ChooseTeam>
+            <hr></hr>
+            <ColoredBox></ColoredBox>
+            <hr></hr>
+            <ShoveBox></ShoveBox>
+            <hr></hr>
+            <Counter></Counter>
+            <hr />
+            <RevealAnswer></RevealAnswer>
+            <hr />
+            <StartAttempt></StartAttempt>
+            <hr />
+            <TwoDice></TwoDice>
+            <hr />
+            <ChangeType></ChangeType>
+            <hr />
+            <CycleHoliday></CycleHoliday>
         </div>
     );
 }
